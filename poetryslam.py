@@ -1,14 +1,30 @@
 #import random module
 import random
+
+#greeting the user
+print('Welcome to the Poetry Slam!')
+print('Choose to read the poem between 1, 2, 3, or 4!')
+poem_choice = input('How should we read the poem today? ')
+def greeting(poem_choice):
+    if poem_choice == '1':
+        get_file_line(poem_choice)
+    elif poem_choice == '2':
+        lines_printed_backwards(poem_choice)
+    elif poem_choice == '3':
+        lines_printed_random(poem_choice)
+    elif poem_choice == '4':
+        lines_printed_custom(poem_choice)
+    else:
+        print('Please choose an option 1-4')
 #function to print the poem to console
-def get_file_line():
+def get_file_line(poem_choice):
     filename = 'poem.txt'
     infile = open(filename, 'r')
     for line in infile:
         print(line, end='')
 
 #function to print lines backwards
-def lines_printed_backwards():
+def lines_printed_backwards(poem_choice):
     lines_list = [
         '1 "Smart" by Shel Silverstein', 
         '2 My dad gave me one dollar bill', 
@@ -36,7 +52,7 @@ def lines_printed_backwards():
         print(i)
 
 #function to print lines at random
-def lines_printed_random():
+def lines_printed_random(poem_choice):
     lines_list = [
         '"Smart" by Shel Silverstein', 
         'My dad gave me one dollar bill', 
@@ -65,7 +81,7 @@ def lines_printed_random():
         print(i)
 
 #function to print in alphabetical order
-def lines_printed_custom():
+def lines_printed_custom(poem_choice):
     lines_list = [
         '"Smart" by Shel Silverstein', 
         'My dad gave me one dollar bill', 
@@ -91,3 +107,4 @@ def lines_printed_custom():
     ]
     for i in sorted(lines_list):
         print(i)
+greeting(poem_choice)
