@@ -16,6 +16,7 @@ def greeting(poem_choice):
         lines_printed_custom(poem_choice)
     else:
         print('Please choose an option 1-4')
+
 #function to print the poem to console
 def get_file_line(poem_choice):
     filename = 'poem.txt'
@@ -108,3 +109,6 @@ def lines_printed_custom(poem_choice):
     for i in sorted(lines_list):
         print(i)
 greeting(poem_choice)
+
+while True:
+    
