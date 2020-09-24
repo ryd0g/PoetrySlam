@@ -60,5 +60,7 @@ def lines_printed_random():
         'And closed his eyes and shook his head--', 
         'Too proud of me to speak!'
     ]
-    
+    for i in lines_list:
+        random.shuffle(lines_list)
+        print(i)
 
