@@ -109,6 +109,4 @@ def lines_printed_custom(poem_choice):
     for i in sorted(lines_list):
         print(i)
 greeting(poem_choice)
-
-while True:
     
