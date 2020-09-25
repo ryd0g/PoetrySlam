@@ -17,7 +17,7 @@ def greeting(poem_choice):
     else:
         print('Please choose an option 1-4')
 
-#function to print the poem to console
+#function to print the poem normally to console
 def get_file_line(poem_choice):
     filename = 'poem.txt'
     infile = open(filename, 'r')
