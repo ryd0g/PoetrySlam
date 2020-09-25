@@ -3,7 +3,7 @@ import random
 
 #greeting the user
 print('Welcome to the Poetry Slam!')
-print('Choose to read the poem between 1, 2, 3, or 4!')
+print('Choose to read the poem in style 1, 2, 3, or 4!')
 poem_choice = input('How should we read the poem today? ')
 def greeting(poem_choice):
     if poem_choice == '1':
