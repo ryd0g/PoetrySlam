@@ -4,6 +4,7 @@ import random
 #greeting the user
 print('Welcome to the Poetry Slam!')
 print('Choose to read the poem in style 1, 2, 3, or 4!')
+print('Select 1 for normal, 2 for backwards, 3 for random, and 4 for alphabetically!')
 poem_choice = input('How should we read the poem today? ')
 def greeting(poem_choice):
     if poem_choice == '1':
