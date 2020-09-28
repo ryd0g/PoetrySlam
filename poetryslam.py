@@ -57,9 +57,9 @@ def lines_printed_backwards(poem_choice):
 def lines_printed_random(poem_choice):
     filename = 'poem.txt'
     infile = open(filename, 'r')
-    lines_list = infile
+    lines_list = infile.readlines()
+    random.shuffle(lines_list)
     for i in lines_list:
-        random.shuffle(lines_list)
         print(i, end='')
 
 #function to print in alphabetical order
